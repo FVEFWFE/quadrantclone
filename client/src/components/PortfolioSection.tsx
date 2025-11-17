@@ -1,13 +1,7 @@
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import placeholderLogo from "@assets/stock_images/placeholder_company__ac6c9c85.jpg";
 
 export default function PortfolioSection() {
-  const handleViewAllClick = () => {
-    console.log('View All Funds & Investments clicked');
-  };
-
   const portfolioCompanies = [
     "Carlisle Health", "Motor One", "Prime100", "Burson Auto Parts",
     "Tower Software", "Seniors Money", "OGL", "MyMC",
@@ -21,46 +15,45 @@ export default function PortfolioSection() {
     "Papinelle", "Care Associates", "Southern Star", "Seertech",
     "Bastion", "Circuitwise", "Connetico", "Canva",
     "Fitzpatrick", "NZ Health Group", "Birch & Waite", "Ritebite",
+    "Affinity Education", "Kathmandu", "Quad Lock", "Icon",
+    "APM", "CDC", "TEEG", "Zip Water",
+    "Modibodi", "ARQ", "TSA Riley", "Qscan",
+    "Evolution Surgical", "EMM", "Superior Food", "Enrich Health",
+    "Mazzucchellis", "Tyrecorp", "Herron Todd White", "Legal Vision",
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-card">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-4" data-testid="text-portfolio-title">
+    <section className="py-24 md:py-32 bg-[#0a0a0a]">
+      <div className="max-w-[1400px] mx-auto px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6" data-testid="text-portfolio-title">
             Funds & Investments
           </h2>
-          <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto" data-testid="text-portfolio-subtitle">
-            Quadrant's portfolio of managed funds and investments has enabled exponential growth for companies based in Australia and New Zealand
+          <p className="text-lg font-light text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-portfolio-subtitle">
+            Quadrant's portfolio of managed funds/investments has enabled exponential growth for companies based in Australia and New Zealand.
           </p>
-          <Button
-            variant="outline"
-            onClick={handleViewAllClick}
-            data-testid="button-view-all"
-          >
-            View All Funds & Investments
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/funds-investments" data-testid="link-view-all">
+            <span className="inline-block text-xs font-light tracking-[0.2em] text-white uppercase border-b border-white/40 hover:border-white pb-1 cursor-pointer transition-colors">
+              View All Funds & Investments
+            </span>
+          </Link>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-px bg-white/5 border border-white/5 mt-16">
           {portfolioCompanies.map((company, index) => (
-            <Card
+            <div
               key={index}
-              className="aspect-square flex items-center justify-center p-6 hover-elevate cursor-pointer transition-all grayscale hover:grayscale-0"
+              className="aspect-square bg-black flex items-center justify-center p-8 hover:bg-white/5 transition-colors cursor-pointer group"
               data-testid={`card-portfolio-${index}`}
             >
               <div className="flex flex-col items-center justify-center gap-3">
                 <img
                   src={placeholderLogo}
                   alt={company}
-                  className="w-12 h-12 object-contain opacity-60"
+                  className="w-16 h-16 object-contain opacity-40 group-hover:opacity-70 transition-opacity grayscale"
                 />
-                <span className="text-xs font-medium text-center text-muted-foreground">
-                  {company}
-                </span>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>
