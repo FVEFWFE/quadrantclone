@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoImage from "@assets/allumi_1_-removebg-preview_1763377431447.png";
 
 export default function Footer() {
   return (
@@ -6,9 +7,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-base font-light tracking-[0.2em] uppercase mb-6" data-testid="text-footer-brand">
-              Quadrant
-            </h3>
+            <img src={logoImage} alt="Allumi" className="h-8 w-auto mb-6" data-testid="img-footer-logo" />
             <p className="text-sm font-light text-white/60 leading-relaxed" data-testid="text-footer-tagline">
               Creating ambitious returns through meaningful partnerships and strategic investments.
             </p>

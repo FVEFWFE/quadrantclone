@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@assets/allumi_1_-removebg-preview_1763377431447.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,7 @@ export default function Header() {
       <div className="max-w-[1400px] mx-auto px-8 py-6">
         <div className="flex items-center justify-between">
           <Link href="/" data-testid="link-home">
-            <h1 className="text-xl font-light tracking-[0.2em] uppercase text-white">
-              QUADRANT
-            </h1>
+            <img src={logoImage} alt="Allumi" className="h-8 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-12">
