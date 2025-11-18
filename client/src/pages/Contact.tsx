@@ -55,9 +55,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-sm font-light tracking-[0.15em] text-white/50 uppercase mb-4">Office</h3>
                     <p className="text-base font-light text-white/80" data-testid="text-office-address">
-                      UE Square<br />
-                      83 Clemenceau Avenue<br />
-                      Singapore
+                      Capital Square<br />
+                      23 Church Street<br />
+                      Singapore 049481
                     </p>
                   </div>
 
