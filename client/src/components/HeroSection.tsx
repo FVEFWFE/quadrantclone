@@ -28,7 +28,7 @@ export default function HeroSection() {
         </p>
         <Link href="/about" data-testid="link-our-story">
           <span className="inline-block text-sm font-light tracking-[0.2em] text-white uppercase border-b border-white/40 hover:border-white pb-1 cursor-pointer transition-colors">
-            Our Story
+            Our Philosophy
           </span>
         </Link>
       </div>
