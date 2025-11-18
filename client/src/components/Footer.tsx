@@ -26,7 +26,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/funds-investments" data-testid="link-footer-investments">
+                <Link href="/investment-criteria" data-testid="link-footer-investments">
                   <span className="text-sm font-light text-white/70 hover:text-white cursor-pointer transition-colors">
                     Funds & Investments
                   </span>
