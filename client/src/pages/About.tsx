@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import perspectiveImage from "@assets/quadrant-office.webp";
+import janJegenImage from "@assets/jan-jegen.jpg";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-black">
       <Header />
-      
+
       <main className="pt-32">
         <section className="py-20 md:py-32">
           <div className="max-w-[1400px] mx-auto px-8">
@@ -29,8 +29,8 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
-                  src={perspectiveImage}
-                  alt="Our team"
+                  src={janJegenImage}
+                  alt="Jan Jegen, Founder"
                   className="w-full h-full object-cover"
                   data-testid="img-about-team"
                 />
