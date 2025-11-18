@@ -50,8 +50,10 @@ export default function Footer() {
               <li className="text-sm font-light text-white/70" data-testid="text-footer-email">
                 Jan@Allumi.com
               </li>
-              <li className="text-sm font-light text-white/70" data-testid="text-footer-location">
-                Singapore
+              <li className="text-sm font-light text-white/70" data-testid="text-footer-address">
+                Capital Square<br />
+                23 Church Street<br />
+                Singapore 049481
               </li>
             </ul>
           </div>
