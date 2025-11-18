@@ -18,7 +18,7 @@ export default function About() {
                 Creating ambitious returns by investing in meaningful and successful growth partnerships
               </h1>
               <p className="text-lg font-light text-white/70 leading-relaxed mb-8" data-testid="text-about-intro">
-                Allumi is a leading private equity firm based in Singapore, focused on partnering with exceptional businesses and management teams to create long-term value.
+                Allumi partners with exceptional businesses and management teams across Asia to create long-term value through strategic growth and operational excellence.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function About() {
                   Our Philosophy
                 </h2>
                 <p className="text-lg font-light text-white/70 leading-relaxed">
-                  The difference between a great business and an amazing one is the people involved. That's why every single one of our investments is, first and foremost, a partnership – an alignment of complementary experiences, skill sets, connections and personalities.
+                  The difference between a great business and an amazing one is the people involved. That's why we approach each investment as, first and foremost, a partnership – an alignment of complementary experiences, skill sets, connections and personalities.
                 </p>
                 <p className="text-lg font-light text-white/70 leading-relaxed">
                   We believe in building lasting relationships with founders, owners, and families, working together to unlock the full potential of their businesses through strategic guidance, operational excellence, and access to our extensive network.

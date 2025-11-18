@@ -10,7 +10,7 @@ export default function Header() {
 
   const navItems = [
     { label: "ABOUT", href: "/about" },
-    { label: "FUNDS & INVESTMENTS", href: "/funds-investments" },
+    { label: "INVESTMENT CRITERIA", href: "/investment-criteria" },
     { label: "CONTACT", href: "/contact" },
   ];
 
