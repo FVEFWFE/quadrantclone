@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import heroVideo from "@assets/hero-video.mov";
+import heroVideo from "@assets/allumidrone.mp4";
 import logoImage from "@assets/allumi_1_-removebg-preview_1763377431447.png";
 
 export default function HeroSection() {
